@@ -1,6 +1,6 @@
 <?php
+    require_once(__DIR__ . '/function.php');
     require 'header.php';
-    require 'oeuvres.php';
 ?>
 <div id="liste-oeuvres">
     <?php foreach($oeuvres as $oeuvre): ?>
