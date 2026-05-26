@@ -1,5 +1,5 @@
 <?php
-    require_once(__DIR__ . '/function.php');
+    require_once(__DIR__ . '/src/function.php');
     require 'header.php';
 ?>
 <div id="liste-oeuvres">
