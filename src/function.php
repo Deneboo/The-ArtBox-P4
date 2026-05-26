@@ -1,5 +1,6 @@
 <?php
     require_once(__DIR__ . '/connexion.php');
+    // Create the table if it doesn't exist and insert the data if the table is empty
     $createTable = "
         CREATE TABLE IF NOT EXISTS oeuvres (
             id INT NOT NULL AUTO_INCREMENT,
@@ -35,7 +36,6 @@
     if ($count == 0) {
         $pdo->exec($insertOeuvres);
     }
-    echo "Table créée";
     // Request oeuvres from the database
     $oeuvresStatement = $pdo->prepare('SELECT * FROM oeuvres');
     // Execute the request
