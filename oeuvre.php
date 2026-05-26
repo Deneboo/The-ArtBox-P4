@@ -1,5 +1,5 @@
 <?php
-    require_once(__DIR__ . '/function.php');
+    require_once(__DIR__ . '/src/function.php');
 
     // Si l'URL ne contient pas d'id, on redirige sur la page d'accueil
     if(empty($_GET['id'])) {
